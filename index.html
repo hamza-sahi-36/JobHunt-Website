@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="fixed isolate top-0 max-w-large w-full m-auto z-10 md:static md:py-8 md:px-4 md:flex md:justify-between md:items-center md:gap-8">
+        <div class="flex bg-extra items-center justify-between p-4 gap-8 md:p-0 md:bg-transparent">
+            <div class="nav__logo">
+                <a href="#" class="text-2xl font-bold text-primary">Job<span class="text-orange-400">Hunt</span></a>
+            </div>
+
+            <div class="text-2xl text-dark cursor-pointer md:hidden" id="menu-btn">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links list-none absolute left-0 top-16 flex flex-col w-full items-center bg-extra -z-10 transition duration-500 p-8 gap-4 -translate-y-full md:static md:p-0 md:transform-none md:flex-row md:justify-end md:bg-transparent"
+            id="nav-links">
+            <li><a href="#home" class="transition duration-300 pb-2 font-bold text-dark hover:text-primary">Home</a>
+            </li>
+            <li><a href="#about" class="transition duration-300 pb-2 font-bold text-dark hover:text-primary">About</a>
+            </li>
+            <li><a href="#job" class="transition duration-300 pb-2 font-bold text-dark hover:text-primary">Jobs</a></li>
+            <li><a href="#service"
+                    class="transition duration-300 pb-2 font-bold text-dark hover:text-primary">services</a></li>
+            <li><a href="#client" class="transition duration-300 pb-2 font-bold text-dark hover:text-primary">Client</a>
+            </li>
+            <li><button
+                    class="px-8 py-4 text-white border-0 outline-0 text-xl bg-purple-700 rounded-md cursor-pointer transition duration-500 hover:bg-purple-800 hover:shadow-custom">Register</button>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="header__container py-20 px-4 max-w-large m-auto relative isolate overflow-hidden" id="home">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark transform -translate-x-1/2 -translate-y-1/2"
+            src="img/google.png" alt="header" style="top: 30%; left: 20%;">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark top-1/2 right-4 transform -translate-y-2/4"
+            src="img/twitter.png" alt="header">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark transform -translate-x-1/2 -translate-y-1/2"
+            src="img/amazon.png" alt="header" style="top: 75%; left: 25%;">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark transform -translate-x-1/2 -translate-y-1/2"
+            src="img/figma.png" alt="header" style="top: 20%; right: 15%;">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark top-1/2 left-4 transform -translate-y-2/4"
+            src="img/linkedin.png" alt="header">
+        <img class="absolute max-w-10 p-2 rounded-full -z-10 shadow-dark transform -translate-x-1/2 -translate-y-1/2"
+            src="img/microsoft.png" alt="header" style="top: 65%; right: 20%;">
+        <h2
+            class="text-orange-600 font-bold max-w-fit mb-4 py-2 px-4 ms-auto me-auto flex items-center gap-3 text-sm bg-gray-50 rounded-full">
+            <img class="max-w-6" src="img/bag.png" alt="bag">
+            No.1 Job Hunt Website
+        </h2>
+        <h1 class="font-bold text-6xl mb-4 text-center text-dark" style="line-height: 5.5rem;">Search, Apply &<br> Get
+            Your <span class="text-primary">Dream Job</span></h1>
+        <p class="pb-8 text-center max-w-xl leading-8 text-light ms-auto me-auto">
+            Your future starts here. Discover countries opportunities tak eaction by applying to jobs that match your
+            skills and aspirations, and transform your career.
+        </p>
+        <div class="header__btns flex justify-center gap-8 items-center">
+            <button
+                class="px-8 py-4 text-white border-0 outline-0 text-xl bg-purple-700 rounded-md cursor-pointer transition duration-500 hover:bg-purple-800 hover:shadow-custom">Browse
+                Jobs</button>
+            <a href="#" class="cursor-pointer text-dark flex items-center gap-2 text-base font-medium">
+                <span
+                    class="py-2 px-3 text-2xl bg-purple-700 text-white rounded-full transition duration-300 hover:shadow-custom"><i
+                        class="ri-play-fill"></i></span>
+                How It Works?
+            </a>
+        </div>
+    </header>
+
+    <section class="steps bg-steps bg-cover bg-center bg-no-repeat" id="about">
+        <div class="py-20 px-4 max-w-large m-auto steps__container">
+            <h2 class="section__header">
+                Get Hired in 4 <span>Quick Easy Steps</span>
+            </h2>
+            <p class="section__desc">
+                Follow Our Simple, Step-by-Step Guide to Quiclkly Land Your Dream Job and Start Your New Career Journey.
+            </p>
+            <div class="steps__grid mt-16 grid gap-4 sm:grid-cols-2 lg:mt-24 lg:grid-cols-4">
+                <div class="steps__card p-4 bg-white rounded-md shadow-dark2 lg:p-6">
+                    <span class="inline-block mb-4 py-2 px-3 rounded-full text-2xl text-orange-600 bg-fff9f6"><i
+                            class="ri-user-fill"></i></span>
+                    <h4 class="mb-2 font-bold text-xl text-dark">Create an Account</h4>
+                    <p class="text-light">
+                        Signup with just a few clicks to unlock exclusive access to a world of job opportunities and
+                        landing your dream job. It's quick, easy, and completely free.
+                    </p>
+                </div>
+
+                <div class="steps__card p-4 bg-white rounded-md shadow-dark2 lg:p-6">
+                    <span class="inline-block mb-4 py-2 px-3 rounded-full text-2xl text-6a38c2 bg-e9ddff"><i
+                            class="ri-search-fill"></i></span>
+                    <h4 class="mb-2 font-bold text-xl text-dark">Search Job</h4>
+                    <p class="text-light">
+                        Dive into our database tailored to match your skills preferences. With our advanced search
+                        filters, finding the perfect job has never been easier.
+                    </p>
+                </div>
+
+                <div class="steps__card p-4 bg-white rounded-md shadow-dark2 lg:p-6">
+                    <span class="inline-block mb-4 py-2 px-3 rounded-full text-2xl text-3ac2ba bg-f0fffe"><i
+                            class="ri-file-paper-fill"></i></span>
+                    <h4 class="mb-2 font-bold text-xl text-dark">Upload CV/Resume</h4>
+                    <p class="text-light">
+                        Showcase your experience by uploading your CV or resume. Let employers know why you're the
+                        perfect candidate for their job openings.
+                    </p>
+                </div>
+
+                <div class="steps__card p-4 bg-white rounded-md shadow-dark2 lg:p-6">
+                    <span class="inline-block mb-4 py-2 px-3 rounded-full text-2xl text-fbbc09 bg-fff8e3"><i
+                            class="ri-briefcase-fill"></i></span>
+                    <h4 class="mb-2 font-bold text-xl text-dark">Get Job</h4>
+                    <p class="text-light">
+                        Take the final step towards your new career. Get ready to embark on your professional journey
+                        and secure the job you've been dreaming of.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 max-w-large m-auto explore__container">
+        <h2 class="section__header">
+            <span>Countless Career Options</span> Are Waiting For You To Explore
+        </h2>
+        <p class="section__desc">
+            Discover a world of excitting opportunities and endless opportunities and find the perfect career to shape
+            your future.
+        </p>
+        <div class="explore__grid my-16 grid gap-4 sm:grid-cols-2 md:grid-cols-4 lg:p-6">
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300  text-orange-600 bg-fff9f6 group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-pencil-ruler-2-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Design</h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">200+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-6a38c2 bg-e9ddff group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-bar-chart-box-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Sales</h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">350+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-ff0101 bg-fff2f2 group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-megaphone-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Marketing
+                </h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">500+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-fbbc09 bg-fff8e3 group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-wallet-3-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Finanac
+                </h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">200+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-car-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Automobile
+                </h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">250+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-34a753 bg-f1fef5 group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-truck-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Logistics /
+                    Delivey</h4>
+                <p class="text-light transition duration-300 group-hover:text-extra"
+                    class="text-light transition duration-300">1k+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-443ee0 bg-f6f5ff group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-computer-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">Admin</h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">100+ Job Openings</p>
+            </div>
+            <div class="explore__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <span
+                    class="inline-block mb-4 py-2 px-3 rounded-md text-2xl transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-[#794cc7]"><i
+                        class="ri-building-fill"></i></span>
+                <h4 class="text-2xl mb-2 font-bold text-dark transition duration-300 group-hover:text-white">
+                    Construction</h4>
+                <p class="text-light transition duration-300 group-hover:text-extra">500+ Job Openings</p>
+            </div>
+        </div>
+        <div class="explore__btn text-center">
+            <button
+                class="px-8 py-4 text-white border-0 outline-0 text-xl bg-purple-700 rounded-md cursor-pointer transition duration-500 hover:bg-purple-800 hover:shadow-custom">View
+                All Categories</button>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 max-w-large m-auto job__container" id="job">
+        <h2 class="section__header">
+            <span>Latest & Top</span> Job Openings
+        </h2>
+        <p class="section__desc">
+            Discover Exciting New Opportunities and High Demand Positions Available Now In Top Industries and Companies.
+        </p>
+
+        <div class="job__grid mt-16 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/figma.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">Figma
+                        </h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">USA
+                        </h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">Senior
+                    Product Engineer</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Lead the development of innovative product solutions, leveraging your expertise in engineering and
+                    product management to drive success.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">12
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$1,45,000/Year</span>
+                </div>
+            </div>
+
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/google.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">
+                            Google</h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">USA
+                        </h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">Product
+                    Manager</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Manage project timelines and budgets to ensure successful delivery of projects on schedule, while
+                    maintaining clear communication and stakeholders.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">2
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$95,000/Year</span>
+                </div>
+            </div>
+
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/linkedin.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">
+                            linkedIn</h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">
+                            Germany</h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">Full
+                    Stack Developer</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Develop and maintain both front-end and back-end components of applications, utilizing a wide range
+                    of programming languages and frameworks.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">10
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$35,000/Year</span>
+                </div>
+            </div>
+
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/amazon.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">
+                            Amazon</h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">USA
+                        </h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">
+                    Front-End Developer</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Design and implement user interfaces using HTML, CSS and JavaScript, collaborating closely with
+                    designers and back-end developers.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">20
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$1,01,000/Year</span>
+                </div>
+            </div>
+
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/twitter.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">
+                            Twitter</h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">USA
+                        </h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">React
+                    Js Developer</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Specialize in building dynamic and interactive user interfaces by the ReactJs library, leveraging
+                    your expertise in JavaScript and front-end development.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">6
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$98,000/Year</span>
+                </div>
+            </div>
+
+            <div class="job__card group p-4 rounded-md shadow-dark2 transition duration-300 hover:bg-primary">
+                <div class="job__card__header flex items-center gap-4">
+                    <img class="max-w-12 p-3 rounded-full bg-white shadow-dark2" src="img/microsoft.png" alt="job">
+                    <div>
+                        <h5 class="text-lg font-semibold text-dark transition duration-300 group-hover:text-white">
+                            Microsoft</h5>
+                        <h6 class="text-sm font-medium text-light transition duration-300 group-hover:text-extra">USA
+                        </h6>
+                    </div>
+                </div>
+                <h4 class="my-4 mx-2 text-xl font-bold text-dark transition duration-300 group-hover:text-white">Python
+                    Developer</h4>
+                <p class="mb-4 text-light transition duration-300 group-hover:text-extra">
+                    Develope scalable and efficient backend systems and applications using Python, utilizing your
+                    proficiency in python programming software development.
+                </p>
+                <div class="job__card__footer flex items-center flex-wrap gap-1">
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-4680e7 bg-e7edf8 group-hover:text-white group-hover:bg-secondary">9
+                        Positions</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-f04a0c bg-f6efef group-hover:text-white group-hover:bg-secondary">Full
+                        Time</span>
+                    <span
+                        class="inline-block py-1 px-3 text-xs font-medium rounded-md transition duration-300 text-3ac2ba bg-f0fffe group-hover:text-white group-hover:bg-secondary">$80,000/Year</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 px-4 max-w-large m-auto offer__container" id="service">
+        <h2 class="section__header">What We <span>Offer</span></h2>
+        <p class="section__desc">
+            Explore the Benefits and Service We Provide to Enhance Your Job and Career Success.
+        </p>
+
+        <div class="offer__grid mt-16 grid gap-y-8 gap-x-4 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
+            <div class="offer__card">
+                <img class="mb-4 rounded-md" src="img/offer-1.jpg" alt="offer">
+                <div class="offer__details flex justify-start">
+                    <span class="text-4xl font-extrabold pr-4"
+                        style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--text-dark);">01</span>
+                    <div class="pl-4 border-l-2 border-solid border-primary">
+                        <h4 class="text-xl font-bold text-dark">Job Recommendation</h4>
+                        <p class="text-light">
+                            Personalized job matches tailored to your skills and preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__card">
+                <img class="mb-4 rounded-md" src="img/offer-2.jpg" alt="offer">
+                <div class="offer__details flex justify-start">
+                    <span class="text-4xl font-extrabold pr-4"
+                        style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--text-dark);">02</span>
+                    <div class="pl-4 border-l-2 border-solid border-primary">
+                        <h4 class="text-xl font-bold text-dark">Create a Build Portfolio</h4>
+                        <p class="text-light">
+                            Showcase your expertise with professional portfolio design.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offer__card">
+                <img class="mb-4 rounded-md" src="img/offer-3.jpg" alt="offer">
+                <div class="offer__details flex justify-start">
+                    <span class="text-4xl font-extrabold pr-4"
+                        style="-webkit-text-fill-color: transparent; -webkit-text-stroke: 1px var(--text-dark);">03</span>
+                    <div class="pl-4 border-l-2 border-solid border-primary">
+                        <h4 class="text-xl font-bold text-dark">Career Consultation</h4>
+                        <p class="text-light">
+                            Recieve expert advice to navigate your career path.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 max-w-large m-auto client__container" id="client">
+        <h2 class="section__header">What Our <span>Client Say</span></h2>
+        <p class="section__desc">
+            Read testimonials and success stories from our satisfied job seeking employers to see how we make a
+            differnce.
+        </p>
+
+        <!-- Slider main container -->
+        <div class="swiper mt-16 w-full max-w-xl">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img class="max-w-20 rounded-full mb-8 ms-auto me-auto shadow-dark" src="img/client-1.jpg" alt="client">
+                        <p class="mb-4 leading-7 text-dark text-center">
+                            Searching for a job can be overwhelming, but this platform made it simple and efficeint. I
+                            uploaded my resume, applied to a few positions, and soon enough, I was hired! Thankyou for
+                            helping me kickstart my career!
+                        </p>
+                        <div class="client__ratings mb-4 flex items-center justify-center gap-1">
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark text-center">Sarah Patel</h4>
+                        <h5 class="text-base font-medium text-dark text-center">Graphic Designer</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img class="max-w-20 rounded-full mb-8 ms-auto me-auto shadow-dark" src="img/client-2.jpg" alt="client">
+                        <p class="mb-4 leading-7 text-dark text-center">
+                           As a recent graduate, I was unsure where to start my job search. This website guided me through the process step by step. From creating my profile to recieving job offers, everything was seamless. I'm now happily employed thnks to this platform
+                        </p>
+                        <div class="client__ratings mb-4 flex items-center justify-center gap-1">
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-half-fill"></i></span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark text-center">Michael Brown</h4>
+                        <h5 class="text-base font-medium text-dark text-center">Recent Graduate</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img class="max-w-20 rounded-full mb-8 ms-auto me-auto shadow-dark" src="img/client-3.jpg" alt="client">
+                        <p class="mb-4 leading-7 text-dark text-center">
+                           Creating an account was breeze, and i was amused by the number of job opportunities available. Thanks to this website, I found the perfect position that aligned perfectly with my career goals.
+                        </p>
+                        <div class="client__ratings mb-4 flex items-center justify-center gap-1">
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                            <span class="text-yellow-500"><i class="ri-star-fill"></i></span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-dark text-center">David Smith</h4>
+                        <h5 class="text-base font-medium text-dark text-center">Software Engineer</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="py-20 px-4 max-w-large m-auto footer__container grid gap-y-8 gap-x-4 sm:grid-cols-2 md:grid-cols-5">
+            <div class="footer__col col-span-2">
+                <div class="footer__logo mb-8">
+                    <a href="#" class="text-2xl font-bold text-primary">Job<span        class="text-orange-400">Hunt</span></a>
+                </div>
+                <p class="max-w-96 text-light">
+                    Our platform is designed to help you find the perfect joband acheive your professional dreams.
+                </p>
+            </div>
+            <div class="footer__col">
+                <h4 class="mb-8 text-xl font-semibold text-dark">Quick Links</h4>
+                <ul class="footer__links grid gap-4">
+                    <li><a class="text-light hover:text-primary" href="#">Home</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">About Us</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Jobs</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Testimonials</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="mb-8 text-xl font-semibold text-dark">Follow Us</h4>
+                <ul class="footer__links grid gap-4">
+                    <li><a class="text-light hover:text-primary" href="#">Facebook</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Instagram</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">LinkedIn</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Twitter</a></li>
+                    <li><a class="text-light hover:text-primary" href="#">Youtube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="mb-8 text-xl font-semibold text-dark">Contact Us</h4>
+                <ul class="footer__links grid gap-4">
+                    <li>
+                        <a class="text-light hover:text-primary" href="#">
+                            <span class="text-xl"><i class="ri-phone-fill"></i></span> +92 324 5678
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-light hover:text-primary" href="#">
+                            <span class="text-xl"><i class="ri-map-pin-2-fill"></i></span> 123, Main Street, Anytown, USA
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bar p-4 text-sm text-light text-center">
+            Copyright @ 2024 Web Mastry. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

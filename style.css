@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #6a38c2;
+    --secondary-color: #6132b4;
+    --text-dark:#262626;
+    --text-light: #737373;
+    --extra-light: #e5e5e5;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+.section__container{
+    max-width: var(--max-width); 
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header{
+    max-width: 900px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.section__header span{
+    color: var(--primary-color);
+}
+
+.section__desc{
+    max-width: 600px; 
+    margin-inline: auto;
+    color: var(--text-light);
+    line-height: 1.75rem;
+    text-align: center;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+html,
+body{
+    scroll-behavior: smooth;
+    font-family: 'poppins', sans-serif;
+}
+
+.nav__links.open{
+    transform: translateY(0);
+}
+
+@media (width > 1024px) {
+    .steps__card:nth-child(2n-1){
+        transform: translateY(-2rem);
+    }
+}
+  
